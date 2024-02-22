@@ -1,0 +1,18 @@
+<div class="cadastro-container">
+    <h1>{{ edit ? 'Edição' : 'Cadastro'}} de Evento</h1>
+    <form [formGroup]="eventForm" (ngSubmit)="submitForm()">
+        <div class="form-group">
+            <label for="description">Descrição do Evento:</label>
+            <textarea id="description" formControlName="description" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="startTime">Hora de Início:</label>
+            <input type="time" id="startTime" formControlName="startTime" required>
+        </div>
+        <div class="form-group">
+            <label for="endTime">Hora de Fim:</label>
+            <input type="time" id="endTime" formControlName="endTime" required>
+        </div>
+        <button type="submit">{{ edit ? 'Editar' : 'Cadastrar'}}</button>
+    </form>
+</div>

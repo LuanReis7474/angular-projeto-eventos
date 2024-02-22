@@ -1,0 +1,74 @@
+.event-container {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.eventos-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.evento {
+    width: calc(25% - 20px);
+    background-color: lightblue;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.evento-info {
+    margin-bottom: 10px;
+}
+
+.id {
+    font-weight: bold;
+}
+
+.evento-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.adicionar {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.editar {
+    background-color: #4caf50;
+    color: white;
+}
+
+.deletar {
+    background-color: #f44336;
+    color: white;
+}
+
+.fechar-btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}

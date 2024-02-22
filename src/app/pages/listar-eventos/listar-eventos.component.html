@@ -1,0 +1,22 @@
+<div class="event-container">
+    <div class="header">
+        <h2>Eventos</h2>
+        <button class="fechar-btn" (click)="closePage()">X</button>
+    </div>
+
+    <button class="adicionar" (click)="addEvent()">Adicionar Evento</button>
+
+    <div class="eventos-list">
+        <div class="evento" *ngFor="let event of events">
+            <div class="evento-info">
+                <div class="id">ID: {{event.id_event}}</div>
+                <div class="descricao">Descrição: {{event.describe_event}}</div>
+                <div class="horario">Horário: {{event.start_time}} - {{event.end_time}}</div>
+            </div>
+            <div class="evento-options">
+                <button class="editar" (click)="editEvent(event.id_event)">Editar</button>
+                <button class="deletar" (click)="deleteEvent(event.id_event)">Deletar</button>
+            </div>
+        </div>
+    </div>
+</div>

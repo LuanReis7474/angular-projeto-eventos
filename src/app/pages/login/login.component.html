@@ -1,0 +1,16 @@
+<div class="login-container">
+    <form [formGroup]="formLogin" class="login-form" (ngSubmit)="login()">
+        <h1>Eventos - Tokenlab</h1>
+        <p *ngIf="error" style="color:red;font-size:12px;text-align: left;">Dados Inválidos!</p>
+        <input type="text" placeholder="Email" formControlName="email" required>
+        <input type="password" placeholder="Senha" formControlName="pass" required>
+
+        <div class="button-container">
+            <button type="submit">Entrar</button>
+            <button (click)="registerUser()">Cadastrar novo usuário</button>
+        </div>
+    </form>
+</div>
+<div *ngIf="loading" class="loading">
+    <img src="../../../assets/loading.gif">
+</div>
